@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="8dp">
+
+    <!-- Habit Name -->
+    <TextView
+        android:id="@+id/tvHabitName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Habit Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/daysContainer"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <!-- Days Row -->
+    <LinearLayout
+        android:id="@+id/daysContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="end"
+        android:padding="8dp">
+
+        <!-- Days of the Week -->
+        <ImageView
+            android:id="@+id/dayMon"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/dayTue"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/dayWed"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/dayThu"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/dayFri"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/daySat"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+
+        <ImageView
+            android:id="@+id/daySun"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/ic_check_circle_outline"
+            app:tint="@color/BlueTheme" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

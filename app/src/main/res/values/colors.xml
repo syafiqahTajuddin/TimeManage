@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="AliceBlue">#E8F8FF</color>
+    <color name="DarkBlue">#78c5dc</color>
+    <color name="Grey">#515151</color>
+    <color name="ButtonLogin">#8EDDFF</color>
+    <color name="TopBar">#E4F2F8</color>
+    <color name="GreyTextBox">#F2F2F2</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="BlueTheme">#0063A6</color>
+    <color name="unselected_tab">#17000000</color>
+    <color name="red">#DC8978</color>
+    <color name="bar_chart_color">#E5EAFC</color>"
+
+    <!-- Priority Colors -->
+    <color name="priority_urgent">#D60004</color> <!-- Important + Urgent -->
+    <color name="priority_important">#D65600</color> <!-- Important + Not Urgent -->
+    <color name="priority_not_important">#03C95F</color> <!-- Not Important + Urgent -->
+    <color name="priority_none">#515151</color> <!-- Not Important + Not Urgent -->
+
+    <color name="tab_border">#B0BEC5</color> <!-- Light gray for tab borders -->
+    <color name="light_gray">#D0D1D4</color>
+
+</resources>

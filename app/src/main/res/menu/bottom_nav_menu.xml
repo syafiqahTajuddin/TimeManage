@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pomodoroFragment"
+        android:icon="@drawable/ic_pomodoro"
+        android:title="Pomodoro" />
+    <item
+        android:id="@+id/manageFragment"
+        android:icon="@drawable/ic_manage"
+        android:title="Manage" />
+    <item
+        android:id="@+id/habitTrackerFragment"
+        android:icon="@drawable/ic_tracker"
+        android:title="Tracker" />
+    <item
+        android:id="@+id/reminderFragment"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom"/>
+</menu>

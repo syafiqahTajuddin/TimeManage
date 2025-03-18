@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.tasks.TaskListFragment">
+
+    <!-- Section Title Task -->
+    <TextView
+        android:id="@+id/today_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/DarkBlue"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Task List"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/progress_today_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/today_task_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Progress Section Title -->
+    <TextView
+        android:id="@+id/progress_today_title"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="76dp"
+        android:background="@color/DarkBlue"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:text="Progress Tracker"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/addTaskButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Progress Container -->
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/addTaskButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_today_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- FrameLayout for Circular Progress Indicator -->
+        <FrameLayout
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:gravity="center">
+
+            <!-- Circular Progress Indicator -->
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:progress="50"
+                app:indicatorSize="90dp"
+                app:indicatorColor="@color/DarkBlue"
+                app:trackColor="@color/Grey"
+                app:indicatorDirectionCircular="clockwise" />
+
+            <!-- Progress Text -->
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"/>
+        </FrameLayout>
+
+        <!-- Task Summary (Total, Completed, Pending) -->
+        <LinearLayout
+            android:id="@+id/taskSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total tasks: 0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/completedTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed tasks: 0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pendingTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending tasks: 0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Add Task Button -->
+    <ImageView
+        android:id="@+id/addTaskButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="115dp"
+        android:contentDescription="Add Task"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

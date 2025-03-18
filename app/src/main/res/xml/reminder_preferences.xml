@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="pomodoro_alerts"
+        android:title="Pomodoro Alerts"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="task_reminders"
+        android:title="Task Reminders"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="task_updates"
+        android:title="Task Updates"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="task_notifications"
+        android:title="Task Notifications"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

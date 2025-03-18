@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_navigation"
+    app:startDestination="@id/taskListFragment">
+
+    <!-- Task List Fragment -->
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.nursyafiqahtajuddin.timemanage.ui.tasks.TaskListFragment"
+        android:label="Task List"
+        tools:layout="@layout/fragment_task_list">
+        <action
+            android:id="@+id/action_taskListFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_taskListFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment" />
+    </fragment>
+
+    <!-- Add Task Fragment -->
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.nursyafiqahtajuddin.timemanage.ui.tasks.AddTaskFragment"
+        android:label="Add Task"
+        tools:layout="@layout/fragment_add_task" />
+
+    <!-- Edit Task Fragment -->
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.nursyafiqahtajuddin.timemanage.ui.tasks.EditTaskFragment"
+        android:label="Edit Task"
+        tools:layout="@layout/fragment_edit_task">
+        <argument
+            android:name="taskID"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

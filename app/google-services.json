@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "764552177871",
+    "project_id": "timemanage-ddf85",
+    "storage_bucket": "timemanage-ddf85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764552177871:android:c01f4db8e467e9e3256fba",
+        "android_client_info": {
+          "package_name": "com.nursyafiqahtajuddin.timemanage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOY7UwDlXMXJdP2tQLi7x8a7t43FaQmO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

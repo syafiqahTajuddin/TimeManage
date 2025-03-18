@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">TimeManage</string>
+
+    <!-- Welcome page. -->
+    <string name="account_ask">Have an account? <font color="#FF000000"><b><u>  Sign In</u></b></font></string>
+    <string name="started_button">Let\'s Get Started</string>
+
+    <!-- Login page. -->
+    <string name="greeting_welcome">Welcome Back!</string>
+    <string name="login_message">Log in to existing TimeManage account</string>
+    <string name="login_button">Log In</string>
+    <string name="signup_ask">Don\'t have an account? <font color="#FF000000"><b> Sign Up</b></font></string>
+    <string name="login_title"><font color="#FF000000"><b>Login</b></font></string>
+
+    <!-- Signup page. -->
+    <string name="signup_title">Create Account</string>
+    <string name="signup_subtitle">Let\'s get started!</string>
+
+    <!-- Login page. -->
+    <string name="create_button">Create</string>
+    <string name="login_ask">Already have an account? <font color="#FF000000"><b> Login here</b></font></string>
+
+    <!-- Home page. -->
+    <string name="home_title">Time for focus!</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Profile page. -->
+    <string name="profile_title">Profile</string>
+    <string name="welcome_message">Welcome,</string>
+    <string name="user_name">User Name</string>
+    <string name="button_report">Report &amp; analysis</string>
+
+    <!-- Edit Profile page. -->
+    <string name="edit_profile_title">Edit Profile</string>
+    <string name="save_button">Save</string>"
+
+    <!-- Pomodoro page. -->
+    <string name="pomodoro_setting_title">Setting</string>
+
+    <!-- Tab layout -->
+    <string name="tab_task_creation">Task Creation</string>
+    <string name="tab_quadrant_scheduler">Quadrant Scheduler</string>
+    <string name="tab_timetable_creation">Timetable Creation</string>
+
+
+    <string name="task_title">Task Title</string>
+    <string name="add_a_task">Add a task</string>
+    <string name="estimated_pomodoros">Estimated Pomodoros</string>
+    <string name="e_g_4">e.g: 4</string>
+    <string name="deadline">Deadline</string>
+    <string name="choose_a_date">Choose a date</string>
+    <string name="select_deadline">Select Deadline</string>
+    <string name="priority">Priority</string>
+    <string name="notification_optional">Notification (Optional)</string>
+    <string name="select_notification_date">Select Notification Date</string>
+    <string name="select_notification">Select Notification</string>
+    <string name="create">Create</string>
+    <string name="manage_title">Manage</string>"
+    <string name="select_task_hint">Select Task</string>
+    <string name="reminder_title">Notification</string>
+    <string name="add_habit">Add a new habit</string>
+    <string name="habit_title">Habit Tracker</string>
+    <string name="add_habit_title">Add New Habit</string>
+
+    <string-array name="task_priorities">
+        <item>Important + Urgent</item>
+        <item>Important + Not Urgent</item>
+        <item>Not Important + Urgent</item>
+        <item>Not Important + Not Urgent</item>
+    </string-array>
+
+    <string-array name="generate_options">
+        <item>All</item>
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>Custom Range</item>
+    </string-array>
+
+    <string-array name="period_options">
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="bar_chart_description">Bar chart showing sales figures for the last quarter.
+    </string>
+
+</resources>
