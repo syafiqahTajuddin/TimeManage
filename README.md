@@ -11,10 +11,9 @@ The features of this app:
 8. Report and Analysis
 
 How to Use it:
-1. Change the branch from main to master
-2. Download all the file in master
-3. Open the Android Studio IDE
-4. Click open to open the existing file
-5. Choose the file that you download. Make sure you choose the file that have android symbol so it direct to the project.
-6. Choose your own running device. If you still don't have any setup, setup your virtual device
-7. Run it, and try the features of the app.
+1. Download all the file
+2. Open the Android Studio IDE
+3. Click open to open the existing file
+4. Choose the file that you download. Make sure you choose the file that have android symbol so it direct to the project.
+5. Choose your own running device. If you still don't have any setup, setup your virtual device
+6. Run it, and try the features of the app.
